@@ -63,4 +63,5 @@ robot pemindah barang dari titik A ke titik B dan sebaliknya dengan menggunakan 
 ## pengkabelan dengan senaor warna
 
 ## kode dengan sensor warna
-berikut kodenya dengan sensor warna
+berikut kodenya dengan sensor warna <br>
+https://github.com/fajarjulyana/goods-moving-robots-forklift/blob/14d6d4a601a1666a2f8d9c33f1b020b5164b6718/src/code-v2.cpp#L1-L245
