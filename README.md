@@ -60,7 +60,7 @@ penambahan sensor warna untuk mendeteksi barang
 <br>
 robot pemindah barang dari titik A ke titik B dan sebaliknya dengan menggunakan Arduino, motor DC, dan servo forklift, serta sensor warna untuk mendeteksi barang yang diangkut.
 
-## pengkabelan dengan senaor warna
+## pengkabelan dengan sensor warna
 
 ## kode dengan sensor warna
 berikut kodenya dengan sensor warna <br>
