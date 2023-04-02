@@ -26,7 +26,7 @@ robot pemindah barang dari titik A ke titik B dengan tambahan servo sebagai fork
 12. Kabel servo
 
 13. Potensiometer
-
+## Pengkabelan
 ## Langkah Pengerjaan 
 1. Pasang motor DC pada rangka robot dan sambungkan ke L293D Motor Driver Shield menggunakan kabel jumper
 
@@ -40,3 +40,16 @@ robot pemindah barang dari titik A ke titik B dengan tambahan servo sebagai fork
 
 7. Pasang roda penggerak dan motor penggerak pada rangka robot
 ## Kodenya 
+https://github.com/fajarjulyana/goods-moving-robots-forklift/blob/0bbf06a296616613f1fd84f4c8f9f0343e17080a/src/code.cpp#L1-L20
+
+<br>
+Penjelasan singkat tentang kode program di atas:
+
+1. Kita menggunakan library NewPing untuk membaca data dari sensor ultrasonik
+2. Kita menggunakan library Servo untuk mengendalikan servo
+3. Pertama-tama, kita mengatur pin untuk sensor ultrasonik, servo, dan motor DC
+4. Kemudian, di dalam fungsi setup(), kita menginisialisasi servo dan mengatur pin untuk motor DC sebagai output
+5. Di dalam fungsi loop(), kita membaca data dari sensor ultrasonik dan menentukan tindakan yang harus dilakukan berdasarkan jarak yang terdeteksi
+6. Jika jarak kurang dari 30 cm, maka robot akan berhenti, menggerakkan servo untuk menaikkan barang, maju sebentar, menurunkan barang, dan mundur sebentar
+7. Jika jarak lebih dari atau sama dengan 30 cm, maka robot akan bergerak maju terus
+Fungsi forward(), backward(), dan stop() digunakan untuk menggerakkan motor DC ke depan, ke belakang, dan untuk berhenti
