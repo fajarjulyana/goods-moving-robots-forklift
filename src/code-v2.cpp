@@ -183,5 +183,60 @@ void loop() {
 
   // cek apakah ada barang yang diangkut
 
-  if (red > red_threshold && green > green_threshold && blue > blue_threshold
+  if (red > red_threshold && green > green_threshold && blue > blue_threshold) {
 
+// jika ada barang, angkat forklift
+
+forklift.write(90);
+
+delay(500);
+    
+    // maju ke titik B
+
+motor_A.forward();
+
+motor_B.forward();
+
+delay(3000);
+
+// turunkan forklift
+
+forklift.write(0);
+
+delay(500);
+
+// mundur ke titik A
+
+motor_A.reverse();
+
+motor_B.reverse();
+
+delay(3000);
+
+// hentikan motor DC
+
+motor_A.stop();
+
+motor_B.stop();
+    
+    } else {
+
+// jika tidak ada barang, maju ke titik B dan kembali ke titik A tanpa angkat forklift
+
+motor_A.forward();
+
+motor_B.forward();
+
+delay(3000);
+    
+motor_A.reverse();
+
+motor_B.reverse();
+
+delay(3000);
+
+motor_A.stop();
+
+motor_B.stop();
+    }
+  }
