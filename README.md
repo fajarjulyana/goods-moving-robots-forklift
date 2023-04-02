@@ -26,6 +26,8 @@ robot pemindah barang dari titik A ke titik B dengan tambahan servo sebagai fork
 12. Kabel servo
 
 13. Potensiometer
+
+14. Sensor Warna
 ## Pengkabelan
 ## Langkah Pengerjaan 
 1. Pasang motor DC pada rangka robot dan sambungkan ke L293D Motor Driver Shield menggunakan kabel jumper
@@ -53,3 +55,12 @@ Penjelasan singkat tentang kode program di atas:
 6. Jika jarak kurang dari 30 cm, maka robot akan berhenti, menggerakkan servo untuk menaikkan barang, maju sebentar, menurunkan barang, dan mundur sebentar
 7. Jika jarak lebih dari atau sama dengan 30 cm, maka robot akan bergerak maju terus
 Fungsi forward(), backward(), dan stop() digunakan untuk menggerakkan motor DC ke depan, ke belakang, dan untuk berhenti
+## Pengembangan 
+penambahan sensor warna untuk mendeteksi barang 
+<br>
+robot pemindah barang dari titik A ke titik B dan sebaliknya dengan menggunakan Arduino, motor DC, dan servo forklift, serta sensor warna untuk mendeteksi barang yang diangkut.
+
+## pengkabelan dengan senaor warna
+
+## kode dengan sensor warna
+berikut kodenya dengan sensor warna
